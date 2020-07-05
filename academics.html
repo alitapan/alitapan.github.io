@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset = "utf-8">
+      <meta name="index">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Ali Tapan - Academics </title>
+      <link rel="icon" href="./resources/network.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://db.onlinewebfonts.com/c/2ab02c2937018ee7f2ccc346929ccf57?family=Artifakt+Element" rel="stylesheet" type="text/css"/> <!-- For the autodesk fonts-->
+      <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    </head>
+    <style>
+        /* For the autodesk font */
+        /*@import url(https://db.onlinewebfonts.com/c/2ab02c2937018ee7f2ccc346929ccf57?family=Artifakt+Element);*/
+        @font-face {font-family: "Artifakt Element"; src: url("https://db.onlinewebfonts.com/t/2ab02c2937018ee7f2ccc346929ccf57.eot"); src: url("https://db.onlinewebfonts.com/t/2ab02c2937018ee7f2ccc346929ccf57.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/2ab02c2937018ee7f2ccc346929ccf57.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/2ab02c2937018ee7f2ccc346929ccf57.woff") format("woff"), url("https://db.onlinewebfonts.com/t/2ab02c2937018ee7f2ccc346929ccf57.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/2ab02c2937018ee7f2ccc346929ccf57.svg#Artifakt Element") format("svg");}
+
+        body{margin: 0px; width:auto; background-color:#333333}
+
+                /* CSS for Mobile */
+        @media screen and (max-width: 650px)
+        {
+          .menu_button{display: none;}
+          .menu_bar{display: none;}
+          .project{display: none;}
+          .name{display: none;}
+          .profile-pic-desktop{display: none;}
+          .navigation_bar{padding: 0px; display:inline; overflow: hidden; background-color:#f5f5f5; position:fixed; left:0; right:0; margin-top: 0px; font-family: "Artifakt Element", sans-serif; height: 35px; z-index: 10;}
+          /* Top Navigation Bar */
+          .name-mobile{display: inline-block; float:left; background-color:#eeeeee; padding: 18px; margin-top: -10px;border-right: 0.25px solid #746f7e; padding-right: 22px; }
+          .menu_button-mobile{display: inline-block; float: right; background-color:#eeeeee; padding: 18px ; margin-top: -10px; border-right: 0.25px solid #746f7e; border-left:0.25px solid #746f7e; padding-right: 22px; }
+
+          .menu_button-mobile:hover{background-color: #c2c2c2;}
+
+          .menu_bar-mobile{padding: 12px; display:block; overflow: hidden; background-color:black; position:fixed; left:0; right:0; margin-top: 35px; border-bottom: 0.25px solid #746f7e;border-top: 0.25px solid #746f7e; opacity: 70%; -webkit-opacity: 0.7; -moz-opacity: 0.7; filter: alpha(opacity=70); z-index: 10; height: 2px; font-size: 15px;}
+          .main-page{text-decoration: none; color: inherit;}
+          .main-page:hover{color: #3d96ff;}
+
+          /* Language */
+          .language-english{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:4px; right:50px; position: absolute; float: right; right: 60px; text-decoration: none;}
+           .language-seperator{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:4px; right:50px; position: absolute; float: right; right: 48px;}
+          .language-turkish{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:4px; right:50px; position: absolute; float: right; right: 20px; text-decoration: none;}
+          .language-english:hover{color:#3d96ff;}
+          .language-turkish:hover{color:#3d96ff;}
+
+          /* Side Navigation Bar */
+          .sidenav { height: 100%; width: 0; position: fixed; z-index: 15; top: 0; right: 0; background-color: white; overflow-x: hidden; transition: 0.5s; padding-top: 60px; font-family: "Artifakt Element", sans-serif; border-left: 0px solid #3d96ff;}
+          .sidenav .closebtn {position: absolute; top: 0px; padding-left: 180px; font-size: 36px; margin-left: 50px;}
+          .sidenav a {padding: 8px 8px 8px 32px; text-decoration: none; font-size: 20px; color: #818181; display: block;transition: 0.3s; position: relative; border-top: 2px solid #eeeeee; left: 25px; right: 100px;}
+          .sidenav a:hover{color:#3d96ff;}
+          .fader {z-index: 14;position:fixed; width:0; height:0; background-color: black; opacity: 50%; -webkit-opacity: 0.5; -moz-opacity: 0.5; filter: alpha(opacity=50);}
+          .project-items{display: none; padding-left: 15px;}
+          .project-items a {top: -15px; left: -30px; font-size: 12px; border: none; border-right: 1px dashed #818181;}
+
+          .main-body{width: 100%; height:300px; background-color: #29363f; border-bottom: 2px solid silver;}
+          .header{position: absolute; margin-top: 120px; margin-left: 25px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 40px;}
+          .academics-info{position: absolute; margin-top: 200px; margin-left: 25px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 14px; margin-right: 35px;}
+          .course-list{position: absolute; margin-top: 300px; margin-left: 25px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 15px; padding-bottom: 50px;}
+          .stack{margin-top: 20px;}
+          .stack div a{text-decoration: none; color: white;}
+          .stack div a:hover{color:gold; text-decoration: underline; cursor: pointer;}
+        }
+        /* CSS for smaller screens */
+        @media screen and (max-width: 1200px) and (min-width: 650px)
+        {
+          .menu_button-mobile{display: none;}
+          .menu_bar-mobile{display: none;}
+          .profile-pic-mobile{display: none;}
+          .project-mobile{display: none;}
+          .name-mobile{display: none;}
+          .navigation_bar{padding: 0px; display:inline; overflow: hidden; background-color:#f5f5f5; position:fixed; left:0; right:0; margin-top: 0px; font-family: "Artifakt Element", sans-serif; height: 53px; z-index: 10;}
+          /* Top Navigation Bar */
+          .name{display: inline-block; font-size: 30px; padding-left: 45px; margin-top: 4px; -webkit-transform:scale(1.4,1); border-right: 0.25px solid #746f7e; padding-right: 25px;}
+          .menu_button{display: inline-block; float: right; background-color:#eeeeee; padding: 18px ; margin-top: 0px; border-right: 0.25px solid #746f7e; border-left:0.25px solid #746f7e; padding-right: 70px; right: 100px;}
+          .menu_button:hover{background-color: #c2c2c2;}
+          .menu_bar{padding: 24px; display:block; overflow: hidden; background-color:black; position:fixed; left:0; right:0; margin-top: 53px; border-bottom: 0.25px solid #746f7e;border-top: 0.25px solid #746f7e; opacity: 70%; -webkit-opacity: 0.7; -moz-opacity: 0.7; filter: alpha(opacity=70); z-index: 10; height: 2px; font-size: 20px;}
+          .main-page{text-decoration: none; color: inherit;}
+          .main-page:hover{color:#3d96ff;}
+
+          /* Language */
+          .language-english{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:10px; right:50px; position: absolute; float: right; right: 110px; text-decoration: none;}
+           .language-seperator{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:10px; right:50px; position: absolute; float: right; right: 89px;}
+          .language-turkish{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:10px; right:50px; position: absolute; float: right; right: 50px; text-decoration: none;}
+          .language-english:hover{color:#3d96ff;}
+          .language-turkish:hover{color:#3d96ff;}
+
+          /* Side Navigation Bar */
+          .sidenav { height: 100%; width: 0; position: fixed; z-index: 15; top: 0; right: 0; background-color: white; overflow-x: hidden; transition: 0.5s; padding-top: 60px; font-family: "Artifakt Element", sans-serif; border-left: 0px solid #3d96ff;}
+          .sidenav .closebtn {position: absolute; top: 0px; padding-left: 180px; font-size: 36px; margin-left: 50px;}
+          .sidenav a {padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;transition: 0.3s; position: relative; border-top: 2px solid #eeeeee; left: 25px; right: 100px;}
+          .sidenav a:hover{color:#3d96ff;}
+          .fader {z-index: 14;position:fixed; width:0; height:0; background-color: black; opacity: 50%; -webkit-opacity: 0.5; -moz-opacity: 0.5; filter: alpha(opacity=50);}
+          .project-items{display: none; padding-left: 15px;}
+          .project-items a {top: -15px; left: -30px; font-size: 15px; border: none; border-right: 1px dashed #818181;}
+
+          .main-body{width: 100%; height:300px; background-color: #29363f; border-bottom: 2px solid silver;}
+          .header{position: absolute; margin-top: 150px; margin-left: 50px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 40px;}
+          .academics-info{position: absolute; margin-top: 225px; margin-left: 50px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 19px;}
+          .course-list{position: absolute; margin-top: 300px; margin-left: 50px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 15px; padding-bottom: 50px;}
+          .stack{margin-top: 20px;}
+          .stack div a{text-decoration: none; color: white;}
+          .stack div a:hover{color:gold; text-decoration: underline; cursor: pointer;}
+        }
+         /* CSS for Desktop */
+        @media screen and (min-width: 1200px)
+        {
+          .menu_button-mobile{display: none;}
+          .menu_bar-mobile{display: none;}
+          .profile-pic-mobile{display: none;}
+          .project-mobile{display: none;}
+          .name-mobile{display: none;}
+          .navigation_bar{padding: 0px; display:inline; overflow: hidden; background-color:#f5f5f5; position:fixed; left:0; right:0; margin-top: 0px; font-family: "Artifakt Element", sans-serif; height: 53px; z-index: 10;}
+          /* Top Navigation Bar */
+          .name{display: inline-block; font-size: 30px; padding-left: 45px; margin-top: 4px; -webkit-transform:scale(1.4,1); border-right: 0.25px solid #746f7e; padding-right: 25px;}
+          .menu_button{display: inline-block; float: right; background-color:#eeeeee; padding: 18px ; margin-top: 0px; border-right: 0.25px solid #746f7e; border-left:0.25px solid #746f7e; padding-right: 70px; right: 100px;}
+          .menu_button:hover{background-color: #c2c2c2;}
+          .menu_bar{padding: 24px; display:block; overflow: hidden; background-color:black; position:fixed; left:0; right:0; margin-top: 53px; border-bottom: 0.25px solid #746f7e;border-top: 0.25px solid #746f7e; opacity: 70%; -webkit-opacity: 0.7; -moz-opacity: 0.7; filter: alpha(opacity=70); z-index: 10; height: 2px; font-size: 20px;}
+          .main-page{text-decoration: none; color: inherit;}
+          .main-page:hover{color:#3d96ff;}
+          /* Language */
+          .language-english{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:10px; right:50px; position: absolute; float: right; right: 110px; text-decoration: none;}
+           .language-seperator{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:10px; right:50px; position: absolute; float: right; right: 89px;}
+          .language-turkish{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:10px; right:50px; position: absolute; float: right; right: 50px; text-decoration: none;}
+          .language-english:hover{color:#3d96ff;}
+          .language-turkish:hover{color:#3d96ff;}
+
+          /* Side Navigation Bar */
+          .sidenav { height: 100%; width: 0; position: fixed; z-index: 15; top: 0; right: 0; background-color: white; overflow-x: hidden; transition: 0.5s; padding-top: 60px; font-family: "Artifakt Element", sans-serif; border-left: 0px solid #3d96ff;}
+          .sidenav .closebtn {position: absolute; top: 0px; padding-left: 180px; font-size: 36px; margin-left: 50px;}
+          .sidenav a {padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;transition: 0.3s; position: relative; border-top: 2px solid #eeeeee; left: 25px; right: 100px;}
+          .sidenav a:hover{color:#3d96ff;}
+          .fader {z-index: 14;position:fixed; width:0; height:0; background-color: black; opacity: 50%; -webkit-opacity: 0.5; -moz-opacity: 0.5; filter: alpha(opacity=50);}
+          .project-items{display: none; padding-left: 15px;}
+          .project-items a {top: -15px; left: -30px; font-size: 15px; border: none; border-right: 1px dashed #818181;}
+
+          .main-body{width: 100%; height:300px; background-color: #29363f; border-bottom: 2px solid silver;}
+          .header{position: absolute; margin-top: 150px; margin-left: 50px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 40px;}
+          .academics-info{position: absolute; margin-top: 225px; margin-left: 50px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 20px;}
+          .course-list{position: absolute; margin-top: 300px; margin-left: 50px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 15px; padding-bottom: 50px;}
+          .stack{margin-top: 20px;}
+          .stack div a{text-decoration: none; color: white;}
+          .stack div a:hover{color:gold; text-decoration: underline; cursor: pointer;}
+        }
+    </style>
+
+
+    <body>
+        <div id="fader" class="fader" onclick="closeNav()"></div>
+        <header>
+            <!--<img class="logo" src="images/logo.svg" alt="logo">-->
+            <nav>
+              <ul class="navigation_bar">
+                <li class="name"> <a href="./index.html" class="main-page"> Ali Tapan </a></li>
+                <li class="name-mobile"> <a href="./index.html" class="main-page"> <i class="fa fa-home" aria-hidden="true"></i> </a></li>
+                <li class="menu_button" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i> MENU</li>
+                <li class="menu_button-mobile" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></li>
+              </ul>
+
+              <ul class="menu_bar">
+                <li > <a href="./academics.html" class="language-english">EN </a></li>
+                <li class="language-seperator"> | </li>
+                <li > <a href="./academics-tr.html" class="language-turkish"> TR </a></li>
+              </ul>
+
+              <ul class="menu_bar-mobile">
+                <li > <a href="./academics.html" class="language-english">EN </a></li>
+                <li class="language-seperator"> | </li>
+                <li > <a href="./academics-tr.html" class="language-turkish"> TR </a></li>
+              </ul>
+
+              <div id="sidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="javascript:void(0)" class="project-items-button">Projects</a>
+                  <div class="project-items">
+                    <ul style="list-style-type: none;">
+                      <a href="https://github.com/alitapan/ECSE-427" target="_blank" style="padding-bottom: 3px;"> UNIX: Simple File System </a>
+                      <a href="https://github.com/alitapan/quoridor" target="_blank" style="padding-bottom: 3px;"> Quoridor Application </a>
+                      <a href="https://github.com/alitapan/ECSE-211" target="_blank" style="padding-bottom: 3px;"> leJOS: Java for LEGO Mindstorms</a>
+                      <a href="https://github.com/alitapan/tutorolo" target="_blank" style="padding-bottom: 3px;"> Tutorolo: Tutoring Application</a>
+                      <a href="https://github.com/alitapan/COMP-551" target="_blank" style="padding-bottom: 3px;"> Applied Machine Learning</a>
+                      <a  href="https://github.com/alitapan/ECSE-425" target="_blank" style="padding-bottom: 3px;"> Computer Architecutre</a>
+                    </ul>
+                  </div>
+                  <a href="./Resume.pdf" target="_blank">Experience</a>
+                  <a href="academics.html">Academics</a>
+                  <a href="about.html">About</a>
+             </div>
+            </nav>
+        </header>
+
+        <div id="fader" class="fader" ></div>
+
+        <div class="main-body">
+            <div class="header">
+                Academics <i class="em em-dizzy" aria-role="presentation" aria-label="DIZZY SYMBOL"></i>
+            </div>
+            <div class="academics-info">
+                Here is a list of courses I have completed at McGill University. You can click on them to view more information about the course.
+            </div>
+            <div class="course-list">
+                <div class="stack">
+                    <div><a href="https://www.mcgill.ca/study/2019-2020/courses/comp-551" target="_blank"> COMP 551 - Applied Machine Learning </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2019-2020/courses/comp-250" target="_blank"> COMP 250 - Introduction to Computer Science </a></div>
+                    <div><a href=".https://www.mcgill.ca/study/2019-2020/courses/comp-202" target="_blank"> COMP 202 - Foundations of Programming </a></div>
+                </div>
+                <div class="stack">
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-486" target="_blank"> ECSE 486 - Power Laboratory </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-457" target="_blank"> ECSE 457 - ECSE Design Project 2 </a></div>
+                    <div><a href=".https://www.mcgill.ca/study/2018-2019/courses/ecse-456" target="_blank"> ECSE 456 - ECSE Design Project 1 </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-434" target="_blank"> ECSE 434 - Microelectronics Laboratory </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-432" target="_blank"> ECSE 432 - Physical Bases: Transistor Devices </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-428" target="_blank"> ECSE 428 - Software Engineering Practice </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-425" target="_blank"> ECSE 425 - Computer Architecture </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-361" target="_blank"> ECSE 361 - Power Engineering </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-352" target="_blank"> ECSE 352 - Electromagnetic Waves </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-351" target="_blank"> ECSE 351 - Electromagnetic Fields </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-334" target="_blank"> ECSE 334 - Introduction to Microelectronics </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-330" target="_blank"> ECSE 330 - Introduction to Electronics </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-323" target="_blank"> ECSE 323 - Digital System Design </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-322" target="_blank"> ECSE 322 - Computer Engineering</a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-321" target="_blank"> ECSE 321 - Introduction to Software Engineering </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-305" target="_blank"> ECSE 305 - Probability & Random Signals </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-303" target="_blank"> ECSE 303 - Signals and Systems </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-291" target="_blank"> ECSE 291 - Electrical Measurements Laboratory </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-223" target="_blank"> ECSE 223 - Model-Based Programming </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-221" target="_blank"> ECSE 221 - Introduction to Computer Engineering </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-211" target="_blank"> ECSE 211 - Design Principles and Methods </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-210" target="_blank"> ECSE 210 - Electric Circuits 2 </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-206" target="_blank"> ECSE 206 - Introduction to Signals and Systems </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-200" target="_blank"> ECSE 200 - Electric Circuits 1 </a></div>
+                </div>
+                <div class="stack">
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/phys-271" target="_blank"> PHYS 271 - Introduction to Quantum Physics </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/phys-142" target="_blank"> PHYS 142 - Electromagnetism & Optics </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/phys-131" target="_blank"> PHYS 131 - Mechanics and Waves </a></div>
+                </div>
+                <div class="stack">
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/cive-281" target="_blank"> CIVE 281 - Analytical Mechanics </a></div>
+                </div>
+                <div class="stack">
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/mime-262" target="_blank"> MIME 262 - Property of Materials in Electrical Engineering </a></div>
+                </div>
+                <div class="stack">
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/math-381" target="_blank"> MATH 381 - Complex Variables & Transform </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/math-264" target="_blank"> MATH 264 - Advanved Calculus for Engineers </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/math-263" target="_blank"> MATH 263 - ODEs for Engineers </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/math-262" target="_blank"> MATH 262 - Intermediate Calculus </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/math-270" target="_blank"> MATH 270 - Applied Linear Algebra </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/math-141" target="_blank"> MATH 141 - Calculus 2 </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/math-140" target="_blank"> MATH 140 - Calculus 1 </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/math-133" target="_blank"> MATH 133 - Linear Algebra and Geometry </a></div>
+                </div>
+                <div class="stack">
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/chem-110" target="_blank"> CHEM 110 - General Chemistry 1 </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/chem-120" target="_blank"> CHEM 120 - General Chemistry 2 </a></div>
+                </div>
+                <div class="stack">
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/facc-400" target="_blank"> FACC 400 - Engineering Professional Practice </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/facc-300" target="_blank"> FACC 300 - Engineering Economy </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/facc-100" target="_blank"> FACC 100 - Introduction to Engineering Profession </a></div>
+                </div>
+                <div class="stack">
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/busa-465"> BUSA 465 - Technological Entrepreneurship </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/econ-225"> ECON 225 - Economics of the Environment </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/ccom-206"> CCOM 206 - Communication in Engineering </a></div>
+                    <div><a href="https://www.mcgill.ca/study/2018-2019/courses/anth-203"> ANTH 203 - Human Evolution </a></div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+          function openNav() {
+            document.getElementById("sidenav").style.width = "300px";
+            document.getElementById("sidenav").style.borderLeft = "8px solid gold";
+            document.getElementById("fader").style.width = "100%";
+            document.getElementById("fader").style.height= "100%";
+          }
+
+          function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+            document.getElementById("sidenav").style.borderLeft = "0px solid #3d96ff";
+            document.getElementById("fader").style.width = "0";
+            document.getElementById("fader").style.height= "0";
+          }
+
+          var dropdown = document.getElementsByClassName("project-items-button");
+          var i;
+          for (i = 0; i< dropdown.length; i++)
+          {
+            dropdown[i].addEventListener("click", function()
+            {
+              this.classList.toggle("active");
+              var dropdownContent = this.nextElementSibling;
+              if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+              } else {
+                dropdownContent.style.display = "block";
+              }
+            });
+          }
+        </script>
+    </body>
+</html>

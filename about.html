@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset = "utf-8">
+      <meta name="index">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Ali Tapan - Portfolio </title>
+      <link rel="icon" href="./resources/network.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://db.onlinewebfonts.com/c/2ab02c2937018ee7f2ccc346929ccf57?family=Artifakt+Element" rel="stylesheet" type="text/css"/> <!-- For the autodesk fonts-->
+    </head>
+    <style>
+        /* For the autodesk font */
+        /*@import url(https://db.onlinewebfonts.com/c/2ab02c2937018ee7f2ccc346929ccf57?family=Artifakt+Element);*/
+        @font-face {font-family: "Artifakt Element"; src: url("https://db.onlinewebfonts.com/t/2ab02c2937018ee7f2ccc346929ccf57.eot"); src: url("https://db.onlinewebfonts.com/t/2ab02c2937018ee7f2ccc346929ccf57.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/2ab02c2937018ee7f2ccc346929ccf57.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/2ab02c2937018ee7f2ccc346929ccf57.woff") format("woff"), url("https://db.onlinewebfonts.com/t/2ab02c2937018ee7f2ccc346929ccf57.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/2ab02c2937018ee7f2ccc346929ccf57.svg#Artifakt Element") format("svg");}
+
+        body{margin: 0px; width:auto; background-color:#333333}
+
+        /* CSS for Mobile */
+        @media screen and (max-width: 650px)
+        {
+          .menu_button{display: none;}
+          .menu_bar{display: none;}
+          .project{display: none;}
+          .name{display: none;}
+          .profile-pic-desktop{display: none;}
+          .navigation_bar{padding: 0px; display:inline; overflow: hidden; background-color:#f5f5f5; position:fixed; left:0; right:0; margin-top: 0px; font-family: "Artifakt Element", sans-serif; height: 35px; z-index: 10;}
+          /* Top Navigation Bar */
+          .name-mobile{display: inline-block; float:left; background-color:#eeeeee; padding: 18px; margin-top: -10px;border-right: 0.25px solid #746f7e; padding-right: 22px; }
+          .menu_button-mobile{display: inline-block; float: right; background-color:#eeeeee; padding: 18px ; margin-top: -10px; border-right: 0.25px solid #746f7e; border-left:0.25px solid #746f7e; padding-right: 22px; }
+
+          .menu_button-mobile:hover{background-color: #c2c2c2;}
+
+          .menu_bar-mobile{padding: 12px; display:block; overflow: hidden; background-color:black; position:fixed; left:0; right:0; margin-top: 35px; border-bottom: 0.25px solid #746f7e;border-top: 0.25px solid #746f7e; opacity: 70%; -webkit-opacity: 0.7; -moz-opacity: 0.7; filter: alpha(opacity=70); z-index: 10; height: 2px; font-size: 15px;}
+          .main-page{text-decoration: none; color: inherit;}
+          .main-page:hover{color: #3d96ff;}
+
+          /* Language */
+          .language-english{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:4px; right:50px; position: absolute; float: right; right: 60px; text-decoration: none;}
+           .language-seperator{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:4px; right:50px; position: absolute; float: right; right: 48px;}
+          .language-turkish{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:4px; right:50px; position: absolute; float: right; right: 20px; text-decoration: none;}
+          .language-english:hover{color:#3d96ff;}
+          .language-turkish:hover{color:#3d96ff;}
+
+          /* Side Navigation Bar */
+          .sidenav { height: 100%; width: 0; position: fixed; z-index: 15; top: 0; right: 0; background-color: white; overflow-x: hidden; transition: 0.5s; padding-top: 60px; font-family: "Artifakt Element", sans-serif; border-left: 0px solid #3d96ff;}
+          .sidenav .closebtn {position: absolute; top: 0px; padding-left: 180px; font-size: 36px; margin-left: 50px;}
+          .sidenav a {padding: 8px 8px 8px 32px; text-decoration: none; font-size: 20px; color: #818181; display: block;transition: 0.3s; position: relative; border-top: 2px solid #eeeeee; left: 25px; right: 100px;}
+          .sidenav a:hover{color:#3d96ff;}
+          .fader {z-index: 14;position:fixed; width:0; height:0; background-color: black; opacity: 50%; -webkit-opacity: 0.5; -moz-opacity: 0.5; filter: alpha(opacity=50);}
+          .project-items{display: none; padding-left: 15px;}
+          .project-items a {top: -15px; left: -30px; font-size: 12px; border: none; border-right: 1px dashed #818181;}
+
+          .main-body{width: 100%; height:300px; background-color: #29363f; border-bottom: 2px solid silver;}
+          .aboutme{position: absolute; margin-top: 120px; margin-left: 25px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 40px;}
+          .current{position: absolute; margin-top: 220px; margin-left: 25px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 18px;}
+          .about-content{position: absolute; margin-top: 340px; margin-left: 25px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 12px; margin-right: 25px;}
+          .about-img{display:none;}
+          .img-fader{dipslay:none;}
+          .footer{margin-top: 511px; width: 100%; height:100px; background-color: #29363f; }
+          .about-img-mobile{position: absolute; border-top: 2px solid gold; width: 100%; border-bottom: 2px solid gold; width: 100%;}
+          .img-fader-mobile{position:absolute; width: 100%; height: 668px; background-color:black; z-index: 4;opacity: 20%; -webkit-opacity: 0.2; -moz-opacity: 0.2; filter: alpha(opacity=20);}
+        }
+
+        @media screen and (max-width: 860px) and (min-width: 650px)
+        {
+          .menu_button-mobile{display: none;}
+          .menu_bar-mobile{display: none;}
+          .profile-pic-mobile{display: none;}
+          .project-mobile{display: none;}
+          .name-mobile{display: none;}
+          .about-img-mobile{display:none;}
+          .img-fader-mobile{display:none;}
+          .navigation_bar{padding: 0px; display:inline; overflow: hidden; background-color:#f5f5f5; position:fixed; left:0; right:0; margin-top: 0px; font-family: "Artifakt Element", sans-serif; height: 53px; z-index: 10;}
+          /* Top Navigation Bar */
+          .name{display: inline-block; font-size: 30px; padding-left: 45px; margin-top: 4px; -webkit-transform:scale(1.4,1); border-right: 0.25px solid #746f7e; padding-right: 25px;}
+          .menu_button{display: inline-block; float: right; background-color:#eeeeee; padding: 18px ; margin-top: 0px; border-right: 0.25px solid #746f7e; border-left:0.25px solid #746f7e; padding-right: 70px; right: 100px;}
+          .menu_button:hover{background-color: #c2c2c2;}
+          .menu_bar{padding: 24px; display:block; overflow: hidden; background-color:black; position:fixed; left:0; right:0; margin-top: 53px; border-bottom: 0.25px solid #746f7e;border-top: 0.25px solid #746f7e; opacity: 70%; -webkit-opacity: 0.7; -moz-opacity: 0.7; filter: alpha(opacity=70); z-index: 10; height: 2px; font-size: 20px;}
+          .main-page{text-decoration: none; color: inherit;}
+          .main-page:hover{color:#3d96ff;}
+
+          /* Language */
+          .language-english{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:10px; right:50px; position: absolute; float: right; right: 110px; text-decoration: none;}
+           .language-seperator{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:10px; right:50px; position: absolute; float: right; right: 89px;}
+          .language-turkish{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:10px; right:50px; position: absolute; float: right; right: 50px; text-decoration: none;}
+          .language-english:hover{color:#3d96ff;}
+          .language-turkish:hover{color:#3d96ff;}
+
+          /* Side Navigation Bar */
+          .sidenav { height: 100%; width: 0; position: fixed; z-index: 15; top: 0; right: 0; background-color: white; overflow-x: hidden; transition: 0.5s; padding-top: 60px; font-family: "Artifakt Element", sans-serif; border-left: 0px solid #3d96ff;}
+          .sidenav .closebtn {position: absolute; top: 0px; padding-left: 180px; font-size: 36px; margin-left: 50px;}
+          .sidenav a {padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;transition: 0.3s; position: relative; border-top: 2px solid #eeeeee; left: 25px; right: 100px;}
+          .sidenav a:hover{color:#3d96ff;}
+          .fader {z-index: 14;position:fixed; width:0; height:0; background-color: black; opacity: 50%; -webkit-opacity: 0.5; -moz-opacity: 0.5; filter: alpha(opacity=50);}
+          .project-items{display: none; padding-left: 15px;}
+          .project-items a {top: -15px; left: -30px; font-size: 15px; border: none; border-right: 1px dashed #818181;}
+
+          .main-body{width: 100%; height:300px; background-color: #29363f; border-bottom: 2px solid silver;}
+          .aboutme{position: absolute; margin-top: 120px; margin-left: 25px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 40px;}
+          .current{position: absolute; margin-top: 220px; margin-left: 25px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 18px;}
+          .about-content{position: absolute; margin-top: 310px; margin-left: 25px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 12px; margin-right: 325px;}
+          .about-img{float:right; width: 310px; margin-top: 300px; border-left: 2px solid silver;}
+          .img-fader{right:0;width: 310px; margin-top: 302px; position: absolute; height: 412px; background-color: black;opacity: 20%; -webkit-opacity: 0.2; -moz-opacity: 0.2; filter: alpha(opacity=20);}
+          .footer{margin-top: 411px; width: 100%; height:100px; background-color: #29363f;border-top: 2px solid silver; }
+        }
+
+
+        /* CSS for smaller screens */
+        @media screen and (max-width: 1200px) and (min-width: 860px)
+        {
+          .menu_button-mobile{display: none;}
+          .menu_bar-mobile{display: none;}
+          .profile-pic-mobile{display: none;}
+          .project-mobile{display: none;}
+          .name-mobile{display: none;}
+          .about-img-mobile{display:none;}
+          .img-fader-mobile{display:none;}
+          .navigation_bar{padding: 0px; display:inline; overflow: hidden; background-color:#f5f5f5; position:fixed; left:0; right:0; margin-top: 0px; font-family: "Artifakt Element", sans-serif; height: 53px; z-index: 10;}
+          /* Top Navigation Bar */
+          .name{display: inline-block; font-size: 30px; padding-left: 45px; margin-top: 4px; -webkit-transform:scale(1.4,1); border-right: 0.25px solid #746f7e; padding-right: 25px;}
+          .menu_button{display: inline-block; float: right; background-color:#eeeeee; padding: 18px ; margin-top: 0px; border-right: 0.25px solid #746f7e; border-left:0.25px solid #746f7e; padding-right: 70px; right: 100px;}
+          .menu_button:hover{background-color: #c2c2c2;}
+          .menu_bar{padding: 24px; display:block; overflow: hidden; background-color:black; position:fixed; left:0; right:0; margin-top: 53px; border-bottom: 0.25px solid #746f7e;border-top: 0.25px solid #746f7e; opacity: 70%; -webkit-opacity: 0.7; -moz-opacity: 0.7; filter: alpha(opacity=70); z-index: 10; height: 2px; font-size: 20px;}
+          .main-page{text-decoration: none; color: inherit;}
+          .main-page:hover{color:#3d96ff;}
+
+          /* Language */
+          .language-english{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:10px; right:50px; position: absolute; float: right; right: 110px; text-decoration: none;}
+           .language-seperator{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:10px; right:50px; position: absolute; float: right; right: 89px;}
+          .language-turkish{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:10px; right:50px; position: absolute; float: right; right: 50px; text-decoration: none;}
+          .language-english:hover{color:#3d96ff;}
+          .language-turkish:hover{color:#3d96ff;}
+
+          /* Side Navigation Bar */
+          .sidenav { height: 100%; width: 0; position: fixed; z-index: 15; top: 0; right: 0; background-color: white; overflow-x: hidden; transition: 0.5s; padding-top: 60px; font-family: "Artifakt Element", sans-serif; border-left: 0px solid #3d96ff;}
+          .sidenav .closebtn {position: absolute; top: 0px; padding-left: 180px; font-size: 36px; margin-left: 50px;}
+          .sidenav a {padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;transition: 0.3s; position: relative; border-top: 2px solid #eeeeee; left: 25px; right: 100px;}
+          .sidenav a:hover{color:#3d96ff;}
+          .fader {z-index: 14;position:fixed; width:0; height:0; background-color: black; opacity: 50%; -webkit-opacity: 0.5; -moz-opacity: 0.5; filter: alpha(opacity=50);}
+          .project-items{display: none; padding-left: 15px;}
+          .project-items a {top: -15px; left: -30px; font-size: 15px; border: none; border-right: 1px dashed #818181;}
+
+          .main-body{width: 100%; height:300px; background-color: #29363f; border-bottom: 2px solid silver;}
+          .aboutme{position: absolute; margin-top: 120px; margin-left: 25px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 40px;}
+          .current{position: absolute; margin-top: 220px; margin-left: 25px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 18px;}
+          .about-content{position: absolute; margin-top: 320px; margin-left: 25px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 16px; margin-right: 450px;}
+          .about-img{float:right; width: 422px; margin-top: 300px; border-left: 2px solid silver;}
+          .img-fader{right:0;width: 422px; margin-top: 302px; position: absolute; height: 560px; background-color: black;opacity: 20%; -webkit-opacity: 0.2; -moz-opacity: 0.2; filter: alpha(opacity=20);}
+          .footer{margin-top: 560px; width: 100%; height:100px; background-color: #29363f;border-top: 2px solid silver; }
+
+        }
+        /* CSS for Desktop */
+        @media screen and (min-width: 1200px)
+        {
+          .menu_button-mobile{display: none;}
+          .menu_bar-mobile{display: none;}
+          .profile-pic-mobile{display: none;}
+          .project-mobile{display: none;}
+          .name-mobile{display: none;}
+          .about-img-mobile{display:none;}
+          .img-fader-mobile{display:none;}
+          .navigation_bar{padding: 0px; display:inline; overflow: hidden; background-color:#f5f5f5; position:fixed; left:0; right:0; margin-top: 0px; font-family: "Artifakt Element", sans-serif; height: 53px; z-index: 10;}
+          /* Top Navigation Bar */
+          .name{display: inline-block; font-size: 30px; padding-left: 45px; margin-top: 4px; -webkit-transform:scale(1.4,1); border-right: 0.25px solid #746f7e; padding-right: 25px;}
+          .menu_button{display: inline-block; float: right; background-color:#eeeeee; padding: 18px ; margin-top: 0px; border-right: 0.25px solid #746f7e; border-left:0.25px solid #746f7e; padding-right: 70px; right: 100px;}
+          .menu_button:hover{background-color: #c2c2c2;}
+          .menu_bar{padding: 24px; display:block; overflow: hidden; background-color:black; position:fixed; left:0; right:0; margin-top: 53px; border-bottom: 0.25px solid #746f7e;border-top: 0.25px solid #746f7e; opacity: 70%; -webkit-opacity: 0.7; -moz-opacity: 0.7; filter: alpha(opacity=70); z-index: 10; height: 2px; font-size: 20px;}
+          .main-page{text-decoration: none; color: inherit;}
+          .main-page:hover{color:#3d96ff;}
+          /* Language */
+          .language-english{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:10px; right:50px; position: absolute; float: right; right: 110px; text-decoration: none;}
+           .language-seperator{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:10px; right:50px; position: absolute; float: right; right: 89px;}
+          .language-turkish{display: inline-block; color: white; font-family: "Artifakt Element", sans-serif; top:10px; right:50px; position: absolute; float: right; right: 50px; text-decoration: none;}
+          .language-english:hover{color:#3d96ff;}
+          .language-turkish:hover{color:#3d96ff;}
+
+          /* Side Navigation Bar */
+          .sidenav { height: 100%; width: 0; position: fixed; z-index: 15; top: 0; right: 0; background-color: white; overflow-x: hidden; transition: 0.5s; padding-top: 60px; font-family: "Artifakt Element", sans-serif; border-left: 0px solid #3d96ff;}
+          .sidenav .closebtn {position: absolute; top: 0px; padding-left: 180px; font-size: 36px; margin-left: 50px;}
+          .sidenav a {padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;transition: 0.3s; position: relative; border-top: 2px solid #eeeeee; left: 25px; right: 100px;}
+          .sidenav a:hover{color:#3d96ff;}
+          .fader {z-index: 14;position:fixed; width:0; height:0; background-color: black; opacity: 50%; -webkit-opacity: 0.5; -moz-opacity: 0.5; filter: alpha(opacity=50);}
+          .project-items{display: none; padding-left: 15px;}
+          .project-items a {top: -15px; left: -30px; font-size: 15px; border: none; border-right: 1px dashed #818181;}
+
+          .main-body{width: 100%; height:300px; background-color: #29363f; border-bottom: 2px solid silver;}
+          .aboutme{position: absolute; margin-top: 120px; margin-left: 25px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 40px;}
+          .current{position: absolute; margin-top: 220px; margin-left: 25px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 18px;}
+          .about-content{position: absolute; margin-top: 350px; margin-left: 25px; font-family: "Artifakt Element", sans-serif; color:white; font-size: 18px; margin-right: 595px;}
+          .about-img{float:right; width: 422px; margin-top: 300px; border-left: 2px solid silver;}
+          .img-fader{right:0;width: 422px; margin-top: 302px; position: absolute; height: 560px; background-color: black;opacity: 20%; -webkit-opacity: 0.2; -moz-opacity: 0.2; filter: alpha(opacity=20);}
+          .footer{margin-top: 560px; width: 100%; height:100px; background-color: #29363f;border-top: 2px solid silver; }
+        }
+    </style>
+
+    <body>
+        <div id="fader" class="fader" onclick="closeNav()"></div>
+        <header>
+            <!--<img class="logo" src="images/logo.svg" alt="logo">-->
+            <nav>
+              <ul class="navigation_bar">
+                <li class="name"> <a href="./index.html" class="main-page"> Ali Tapan </a></li>
+                <li class="name-mobile"> <a href="./index.html" class="main-page"> <i class="fa fa-home" aria-hidden="true"></i> </a></li>
+                <li class="menu_button" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i> MENU</li>
+                <li class="menu_button-mobile" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></li>
+              </ul>
+
+              <ul class="menu_bar">
+                <li > <a href="./about.html" class="language-english">EN </a></li>
+                <li class="language-seperator"> | </li>
+                <li > <a href="./about.html" class="language-turkish"> TR </a></li>
+              </ul>
+
+              <ul class="menu_bar-mobile">
+                <li > <a href="./about.html" class="language-english">EN </a></li>
+                <li class="language-seperator"> | </li>
+                <li > <a href="./about.html" class="language-turkish"> TR </a></li>
+              </ul>
+
+              <div id="sidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="javascript:void(0)" class="project-items-button">Projects</a>
+                  <div class="project-items">
+                    <ul style="list-style-type: none;">
+                      <a href="https://github.com/alitapan/ECSE-427" target="_blank" style="padding-bottom: 3px;"> UNIX: Simple File System </a>
+                      <a href="https://github.com/alitapan/quoridor" target="_blank" style="padding-bottom: 3px;"> Quoridor Application </a>
+                      <a href="https://github.com/alitapan/ECSE-211" target="_blank" style="padding-bottom: 3px;"> leJOS: Java for LEGO Mindstorms</a>
+                      <a href="https://github.com/alitapan/tutorolo" target="_blank" style="padding-bottom: 3px;"> Tutorolo: Tutoring Application</a>
+                      <a href="https://github.com/alitapan/COMP-551" target="_blank" style="padding-bottom: 3px;"> Applied Machine Learning</a>
+                      <a  href="https://github.com/alitapan/ECSE-425" target="_blank" style="padding-bottom: 3px;"> Computer Architecutre</a>
+                    </ul>
+                  </div>
+                  <a href="./Resume.pdf" target="_blank">Experience</a>
+                  <a href="./academics.html">Academics</a>
+                  <a href="./about.html">About</a>
+             </div>
+            </nav>
+        </header>
+        <div class="main-body">
+                <div class="aboutme">
+                    About Me
+                </div>
+                <div class="current">
+                    Currently a Mcgill University student pursuing my undergraduate degree.
+                </div>
+                <div class="about-content" >
+
+                   <p> From 2018 to 2019, I was an Avionics Engineer co-op intern at Bombardier Aerospace (acquired by Mitsubishi Heavy Industries). I worked on multitudes of projects during my time including Next Gen II designs and ATMOSPHÈRE cabin of CRJ which debuted at Farnborough Airshow 2018. Before the Mitsubishi acquisition I had a chance to work on a complete remodeling of the avionics equipment of CRJ series. In 2017, I was an electrical engineering intern at Otokar Automotive and Defense helping the company with MİTÜP (National Tank Production) and ARMA 8x8 projects as well as maintenance of older vehicles, ARMA 6x6 and KAYA.
+                    <br>
+                    <br>I play water polo at McGill University and played in Istanbul Enka SK before moving to Canada. I played in Spor Toto Süper Lig (Major League Turkey) as well as U15 and U17 European comptetions representing Enka SK and team Turkey.
+                    <br>
+                    
+                </p>
+                </div>
+                <div class="picture">
+                    <div class="img-fader"> </div>
+                    <img src="./resources/waterpolo.jpg" class="about-img">
+                </div>
+            </div>
+
+        <footer>
+            <div class="footer">
+                <div class="img-fader-mobile"> </div>
+                <img src="./resources/waterpolo.jpg" class="about-img-mobile">
+            </div>
+        </footer>
+
+        <script>
+          function openNav() {
+            document.getElementById("sidenav").style.width = "300px";
+            document.getElementById("sidenav").style.borderLeft = "8px solid gold";
+            document.getElementById("fader").style.width = "100%";
+            document.getElementById("fader").style.height= "100%";
+          }
+
+          function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+            document.getElementById("sidenav").style.borderLeft = "0px solid #3d96ff";
+            document.getElementById("fader").style.width = "0";
+            document.getElementById("fader").style.height= "0";
+          }
+
+          var dropdown = document.getElementsByClassName("project-items-button");
+          var i;
+          for (i = 0; i< dropdown.length; i++)
+          {
+            dropdown[i].addEventListener("click", function()
+            {
+              this.classList.toggle("active");
+              var dropdownContent = this.nextElementSibling;
+              if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+              } else {
+                dropdownContent.style.display = "block";
+              }
+            });
+          }
+        </script>
+    </body>
+</html>
